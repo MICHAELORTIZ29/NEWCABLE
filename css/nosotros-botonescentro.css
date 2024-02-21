@@ -1,0 +1,52 @@
+.card-header {
+    background-color: rgb(249, 249, 122) !important;
+}
+.btn-yellow {
+    color: black !important;
+    background-color: yellow !important;
+    transition: all 0.3s ease; /* Transición para la animación */
+}
+
+/* Para centrar el texto dentro del botón */
+.btn.btn-link.btn-yellow.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+/* Para ajustar el comportamiento del botón */
+.btn.btn-link.btn-yellow.text-center {
+    color: black; /* Color del texto */
+    background-color: yellow; /* Fondo amarillo */
+
+    outline: none; /* Sin contorno */
+    padding: 15px; /* Sin relleno */
+    border: 2px solid rgb(91, 88, 88);
+}
+.btn-yellow:hover {
+    background-color: black !important; /* Cambiar el fondo a negro al hacer hover */
+    color: yellow !important; /* Cambiar el color del texto a amarillo al hacer hover */
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
+
+.btn-yellow:active, .btn-yellow.active {
+    background-color: black !important; /* Cambiar el fondo a negro al estar activo */
+    color: yellow !important; /* Cambiar el color del texto a amarillo al estar activo */
+    transform: scale(1.1); /* Aumentar tamaño al estar activo */
+}
+.btn-yellow span {
+    transition: all 0.3s ease; /* Transición para la animación */
+}
+
+.btn-yellow:hover span {
+    transform: scale(1.1); /* Aumentar tamaño del texto al hacer hover */
+}
+.btn.btn-link.btn-yellow.text-center:hover {
+    color: black; /* Cambiar color del texto al hacer hover */
+    background-color: yellow; /* Mantener fondo amarillo al hacer hover */
+}
+
+/* Estilo de los enlaces activos */
+.btn.btn-link.btn-yellow.text-center:focus, .btn.btn-link.btn-yellow.text-center:active {
+    color: black; /* Cambiar color del texto al estar activo */
+    background-color: yellow; /* Mantener fondo amarillo al estar activo */
+}

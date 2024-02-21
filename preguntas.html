@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsivo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-q15YVnDPsFd6dvLXtdTjUj/FcVJ+ZnkcMW9sTiYgjioUqbyzkbTuD8jDCBmY9kRkUgg3EYcNUlKfK+GirPOfQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/preguntas-sliderdiagonal.css">
+    <link rel="stylesheet" href="css/preguntas-acordeon.css">
+    
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mx-auto mx-md-0" aria-labelledby="navbarDropdownServicios">
+                            <a class="dropdown-item text-center text-md-left" href="#">Internet</a>
+                            <a class="dropdown-item text-center text-md-left" href="#">Cable</a>
+                            <a class="dropdown-item text-center text-md-left" href="#">Duos</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formas de Pago</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="splitview skewed">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h2 class="header-lg d-none d-md-block">RESUELVE TUS DUDAS AQUI.!</h2>
+                    <h6 class="header-sm d-md-none">RESUELVE TUS DUDAS AQUI.!</h6>
+                    <!-- <p>Consejos y soluciones para una mejor experiencia</p> -->
+                </div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/original-image.jpg" alt="Original">
+            </div>
+        </div>
+    
+        <div class="panel top">
+            <div class="content">
+                <div class="description">
+                    <h2 class="header-lg d-none d-md-block">PREGUNTAS FRECUENTES</h2>
+                    <h6 class="header-sm d-md-none">PREGUNTAS FRECUENTES</h6>
+                    <p>Sobre New Cable Peru</p>
+                </div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/duotone-image.jpg" alt="Duotone">
+            </div>
+        </div>
+    
+        <div class="handle"></div>
+    </div>
+
+
+
+    <main class="py-1">
+        <div class="container">
+            <div class="row">
+                <article class="col-md-8">
+                    <!--Texto fijo-->
+                    
+                    <hr>
+                    <p>
+                        <!--Componente de acordeon para la mision, visión y los valores-->
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h4 class="mb-0">
+                                        <a class="btn btn-link" data-toggle="collapse" data-target="#tab-mision" aria-controls="collapseOne">
+                                           ¿Qué ventajas ofrece la fibra óptica sobre otras tecnologías de internet?
+                                </a>
+                                    </h4>
+                                </div>
+
+                                <div id="tab-mision" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>
+                                        La fibra óptica ofrece una mayor velocidad y estabilidad de conexión en comparación con otras tecnologías,
+                                         ya que utiliza luz para transmitir datos a través de cables de vidrio. Y gracias a ello es que la velocidad
+                                         de internet que ofrecemos es constante y simétrica, para que nuestros clientes disfruten al máximo de nuestros
+                                         servicios.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h4 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tab-vision" aria-controls="collapseTwo">
+                                    2. ¿Hay algún tipo de restricciones o limitaciones de datos con el servicio?
+                                </a>
+                                    </h4>
+                                </div>
+                                <div id="tab-vision" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>
+                                            A comparación de las demás compañías, todos los servicios con los que contamos no mantienen restricciones 
+                                            de datos, el uso es completamente ilimitado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h4 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tab-valores" aria-controls="collapseThree">
+                                            3. ¿Dónde puedo acercarme a realizar los pagos de mi servicio de NewCable?
+                                </a>
+                                    </h4>
+                                </div>
+                                <div id="tab-valores" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Para realizar el pago de tu servicio, tienes las siguientes opciones:
+                                            <br>
+                                            - Pago en línea desde la página WEB o APP de los bancos: BBVA, BCP E INTERBANK.
+                                            <br>
+                                            - Pago presencial en las agencias bancarias, de los bancos mencionados anteriormente.
+                                            <br>
+                                            - Pago presencial en los agentes autorizados en bodegas, minimarkets, etc.
+                                            <br>
+                                            <br>
+                                            <a href="https://wa.me/957381166" target="_blank">Para mayor información, contáctese con nosotros</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h4 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tab-pregunta-cuatro" aria-controls="collapseFour">
+                                            4. ¿Cuáles son los beneficios adicionales incluidos en el paquete de servicios?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="tab-pregunta-cuatro" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Nuestros paquetes de servicios pueden incluir beneficios como acceso a plataformas de streaming, llamadas telefónicas, antivirus, entre otros. Consulta los detalles de cada plan para conocer los beneficios específicos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h4 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tab-pregunta-cinco" aria-controls="collapseFour">
+                                            5. ¿Qué opciones consulta de soporte técnico están disponibles por aqui?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="tab-pregunta-cinco" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Ofrecemos soporte técnico vía telefónica, chat en línea y asistencia presencial. Nuestro equipo está disponible las 24 horas para resolver cualquier inconveniente con tu conexión o equipo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </p>
+                </article>
+                <aside class="col-12 col-md-4 d-none d-md-block">
+                    <img src="images/personasjuntas.png" alt="Nosotros" width="400" height="600">
+                </aside>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/logo1.png" alt="Logo de la empresa" style="width: 150px;">
+                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor servicio</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul>
+                        <li><a href="nosotros.html" class="animated-link">Inicio</a></li>
+                        <li><a href="nosotros.html" class="animated-link">Nosotros</a></li>
+                        <li><a href="" class="animated-link">Servicios</a></li>
+                        <li><a href="#" class="animated-link">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,%20Estoy%20interesada%20más%20información%20por%20favor.!" target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
+                        <li><a href="mailto:newcable@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i> Newcable@gmail.com</a></li>
+                    </ul>
+                    <!-- Agregamos los iconos de redes sociales debajo del correo -->
+                    <ul class="footer-social-icons mt-1" style="margin-left: 30px;">
+                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <!-- Agrega más iconos según sea necesario -->
+                    </ul>
+                </div>
+                
+                <!-- <div class="col-md-3">
+                    <h5>Distribuidor autorizado de: </h5>
+                    <ul>
+                        <li><img src="/images/imgsunat.png" alt="Distribuidor 1" style="width: 150px;"></li>
+                        <li><img src="/images/imgnubefat.png" alt="Distribuidor 2" style="width: 150px;"></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright 2024 © NEWCABLE </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/preguntas-sliderdiagonal.js"></script>
+ 
+
+</body>
+</html>
+

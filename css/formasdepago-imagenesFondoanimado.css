@@ -1,0 +1,64 @@
+
+.animated-background {
+    position: relative;
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.context {
+    width: 100%;
+    text-align: center;
+}
+
+.area {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    position: relative;
+    overflow: hidden;
+}
+
+.area img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content-right {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    text-align: right;
+    padding-right: 20px;
+}
+
+.content-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method img {
+    max-width: 100px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.payment-method p {
+    font-size: 14px;
+}
+
+.additional-info p {
+    font-size: 14px;
+}

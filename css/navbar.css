@@ -1,0 +1,59 @@
+.navbar {
+    background-color: #FFB33E;
+}
+
+.navbar-brand img {
+    height: 70px; /* Ajusta la altura de tu logo según necesites */
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0; /* Inicialmente 0 */
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease; /* Transición suave */
+    visibility: hidden; /* Ocultar la línea por defecto */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Ancho completo cuando el enlace es hover */
+    visibility: visible; /* Mostrar la línea cuando el enlace es hover */
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%; /* Ancho completo cuando el enlace está activo */
+    visibility: visible; /* Mostrar la línea cuando el enlace está activo */
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link::after {
+        display: none; /* Ocultar la línea en dispositivos móviles */
+    }
+}
+.dropdown-menu {
+    background-color: #FFB33E; /* Fondo del submenu */
+}
+
+.dropdown-item {
+    color: black; /* Color del texto del submenu */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos adicionales para el hover y el click del submenu */
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: black; /* Cambiar el fondo del submenu al hacer hover o clic */
+    color: #FFB33E; /* Cambiar el color del texto del submenu al hacer hover o clic */
+}
+/* Estilos para el submenu en dispositivos móviles */
+

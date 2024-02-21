@@ -1,0 +1,35 @@
+.text-container-wrapper {
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin: 0 20px; /* Margen en los lados */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+.text-container {
+    text-align: left; /* Alinear todo el texto a la izquierda */
+    flex: 1; /* Que el contenedor de texto ocupe todo el espacio restante */
+}
+
+.text-container p {
+    margin: 10px 0; /* Espacio entre párrafos */
+}
+
+.text-container a {
+    color: blue; /* Color del enlace */
+    text-decoration: underline; /* Subrayado del enlace */
+   
+}
+
+.text-container a:hover {
+    color: darkblue; /* Color al pasar el ratón sobre el enlace */
+}
+.text-image-container {
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+}
+
+
+.image-container {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
